@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Phụ kiện - OTO STORE</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    .accessory-detail {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .accessory-detail img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .price {
+      color: #dc3545;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../IMG/logo2.png" height="40"> OTO STORE
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+          <li class="nav-item"><a href="cars.html" class="nav-link">Ô tô</a></li>
+          <li class="nav-item"><a href="accessories.html" class="nav-link active">Phụ kiện</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link">
+              Giỏ hàng <span id="cartCount" class="badge bg-danger">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container flex-grow-1">
+    <div class="accessory-detail" id="accessoryDetail">
+      <h2 class="text-center mb-4">Thông tin chi tiết phụ kiện</h2>
+      <div id="accessoryContent" class="text-center text-muted">Đang tải dữ liệu...</div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    © 2025 OTO STORE. All rights reserved. | Cùng bạn trên mọi hành trình.
+  </footer>
+
+  <script src="../JS/jquery-3.7.1.min.js"></script>
+  <script src="../JS/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      const accessoryData = JSON.parse(localStorage.getItem("selectedAccessory"));
+      const cartCount = $("#cartCount");
+
+      // Lấy giỏ hàng
+      function getCart() {
+        return JSON.parse(localStorage.getItem("cart")) || [];
+      }
+
+      // Cập nhật số lượng giỏ hàng
+      function updateCartCount() {
+        const cart = getCart();
+        const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.text(total);
+      }
+
+      // Kiểm tra dữ liệu
+      if (!accessoryData) {
+        $("#accessoryContent").html("<p>⚠️ Không tìm thấy thông tin phụ kiện. Vui lòng quay lại trang Phụ kiện.</p>");
+        return;
+      }
+
+      // Hiển thị thông tin phụ kiện
+      $("#accessoryContent").html(`
+        <img src="${accessoryData.img}" alt="${accessoryData.name}" class="mb-3">
+        <h3>${accessoryData.name}</h3>
+        <p class="price">Giá: ${accessoryData.price}</p>
+        <p>${accessoryData.desc || "Không có mô tả chi tiết."}</p>
+        <button id="btnAddToCart" class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+        <a href="accessories.html" class="btn btn-secondary mt-3 ms-2">← Quay lại</a>
+      `);
+
+      // Nút thêm vào giỏ
+      $("#btnAddToCart").on("click", function () {
+        let cart = getCart();
+        const found = cart.find(item => item.id === accessoryData.id);
+        if (found) found.quantity++;
+        else cart.push({ ...accessoryData, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        alert("✅ Đã thêm phụ kiện vào giỏ hàng!");
+      });
+
+      updateCartCount();
+    });
+  </script>
+</body>
+</html>

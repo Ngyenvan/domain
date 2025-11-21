@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ - OTO STORE</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    .car-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .car-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+    .car-card img {
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ảnh phủ kín khung mà không méo */
+      border-radius: 0.5rem 0 0 0.5rem; /* Bo góc trái cho đẹp */
+    }
+    .car-card:hover img {
+      transform: scale(1.05);
+    }
+    .cart-badge {
+      background: #dc3545;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      padding: 2px 6px;
+      vertical-align: top;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../IMG/logo2.png" height="40" alt="Logo"> OTO STORE
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Trang chủ</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+          <li class="nav-item"><a href="cars.html" class="nav-link">Ô tô</a></li>
+          <li class="nav-item"><a href="accessories.html" class="nav-link">Phụ kiện</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link position-relative">
+              Giỏ hàng
+              <span id="cartCount" class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner text-center text-light bg-dark py-5">
+    <h1>Chào mừng đến với OTO STORE</h1>
+    <p>Khám phá những mẫu xe và phụ kiện hiện đại nhất 2025</p>
+  </section>
+
+  <!-- Ô tô nổi bật -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">🚗 Ô TÔ NỔI BẬT</h2>
+
+    <!-- 🚗 TOYOTA CAMRY 2025 -->
+<div class="card mb-4 car-card" 
+     data-id="1" 
+     data-name="Toyota Camry 2025" 
+     data-img="../IMG/car1.jpg" 
+     data-price="1.250.000.000 VNĐ" 
+     data-desc="Sedan sang trọng, nội thất cao cấp, tiết kiệm nhiên liệu.">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../IMG/Camry2025.jpg" class="img-fluid rounded-start" alt="Toyota Camry 2025">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Toyota Camry 2025</h5>
+        <p class="card-text">Sedan sang trọng, nội thất cao cấp, tiết kiệm nhiên liệu.</p>
+        <p class="card-text"><strong>Thông tin nhanh:</strong> Động cơ Hybrid 2.5L, công suất mạnh mẽ nhưng tiết kiệm nhiên liệu vượt trội.</p>
+        <p class="card-text"><strong>Công nghệ:</strong> Trang bị gói an toàn Toyota Safety Sense 3.0, màn hình cảm ứng 12 inch.</p>
+        <p class="card-text"><strong>Trải nghiệm:</strong> Vận hành êm ái, không gian yên tĩnh và sang trọng bậc nhất phân khúc.</p>
+        <p class="card-text text-danger fw-bold">Giá: 1.250.000.000 VNĐ</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🚙 MAZDA CX-5 2025 -->
+<div class="card mb-4 car-card" 
+     data-id="2" 
+     data-name="Mazda CX-5 2025" 
+     data-img="../IMG/car2.jpg" 
+     data-price="999.000.000 VNĐ" 
+     data-desc="SUV thể thao, phong cách hiện đại, phù hợp gia đình.">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../IMG/Mazda-CX-5-2025.jpg" class="img-fluid rounded-start" alt="Mazda CX-5 2025">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Mazda CX-5 2025</h5>
+        <p class="card-text">SUV thể thao, phong cách hiện đại, phù hợp gia đình.</p>
+        <p class="card-text"><strong>Thông tin nhanh:</strong> Động cơ SkyActiv-G 2.0L, hệ dẫn động 4 bánh toàn thời gian (AWD).</p>
+        <p class="card-text"><strong>Công nghệ:</strong> Hỗ trợ lái i-Activsense, màn hình trung tâm 10.25 inch tích hợp Apple CarPlay.</p>
+        <p class="card-text"><strong>Trải nghiệm:</strong> Cabin cách âm tốt, ghế ngồi da cao cấp, cảm giác lái thể thao và chắc chắn.</p>
+        <p class="card-text text-danger fw-bold">Giá: 970.000.000 VNĐ</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🚐 KIA CARNIVAL 2025 -->
+<div class="card mb-4 car-card" 
+     data-id="3" 
+     data-name="KIA Carnival 2025" 
+     data-img="../IMG/kia-carnival-2025.jpg" 
+     data-price="1.500.000.000 VNĐ" 
+     data-desc="Minivan cao cấp, thiết kế sang trọng, tiện nghi vượt trội, phù hợp cho gia đình.">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../IMG/KIA-CARNIVAL-2025-1.jpg" class="img-fluid rounded-start" alt="KIA Carnival 2025">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">KIA Carnival 2025</h5>
+        <p class="card-text">Minivan cao cấp, thiết kế sang trọng, tiện nghi vượt trội, phù hợp cho gia đình.</p>
+        <p class="card-text"><strong>Thông tin nhanh:</strong> 7 chỗ ngồi rộng rãi, cửa trượt điện thông minh, khoang hành lý siêu lớn.</p>
+        <p class="card-text"><strong>Công nghệ:</strong> Màn hình kép 12.3 inch, hỗ trợ lái thông minh ADAS, camera 360 độ.</p>
+        <p class="card-text"><strong>Trải nghiệm:</strong> Vận hành êm, điều hòa 3 vùng độc lập, mang đến cảm giác như “chuyên cơ mặt đất”.</p>
+        <p class="card-text text-danger fw-bold">Giá: 1.500.000.000 VNĐ</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-4 mt-5">
+    <div class="container">
+      <h5>Về OTO STORE</h5>
+      <p>OTO STORE chuyên cung cấp thông tin và sản phẩm ô tô chính hãng.</p>
+      <p>Email: otostorevn@gmail.com | Hotline: 0945 538 349</p>
+      <p>© 2025 OTO STORE. All rights reserved. | Cùng bạn trên mọi hành trình.</p>
+    </div>
+  </footer>
+
+  <script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

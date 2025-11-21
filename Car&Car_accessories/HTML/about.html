@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu - OTO STORE</title>
+  <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+    .car-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .car-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+    .car-card img {
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ảnh phủ kín khung mà không méo */
+      border-radius: 0.5rem 0 0 0.5rem; /* Bo góc trái cho đẹp */
+    }
+    .car-card:hover img {
+      transform: scale(1.05);
+    }
+    .cart-badge {
+      background: #dc3545;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      padding: 2px 6px;
+      vertical-align: top;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../IMG/logo2.png" height="40" alt="Logo"> OTO STORE
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">Giới thiệu</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+          <li class="nav-item"><a href="cars.html" class="nav-link">Ô tô</a></li>
+          <li class="nav-item"><a href="accessories.html" class="nav-link">Phụ kiện</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link position-relative">
+              Giỏ hàng
+              <span id="cartCount" class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="banner text-center text-light bg-dark py-5">
+    <h1>Chào mừng đến với OTO STORE</h1>
+    <p>Khám phá những mẫu xe và phụ kiện hiện đại nhất 2025</p>
+  </section>
+  <!-- Giới thiệu -->
+  <!-- Giới thiệu -->
+  <section class="content-section container">
+    <div class="row mb-5">
+      <!-- Cột 1 của phần giới thiệu -->
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3 text-primary">Chúng tôi là ai?</h2>
+        <p>
+          <strong>OTO STORE</strong> là nền tảng thương mại điện tử chuyên cung cấp các dòng xe hơi mới nhất 
+          cùng phụ kiện chính hãng. Chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm 
+          tiện lợi, minh bạch và an toàn nhất.
+        </p>
+        <p>
+          Từ những chiếc xe phổ thông đến xe sang trọng, OTO STORE luôn cập nhật những mẫu mới 
+          nhất trên thị trường, đi kèm dịch vụ chăm sóc tận tâm và chuyên nghiệp.
+        </p>
+      </div>
+
+      <!-- Cột 2 của phần giới thiệu -->
+      <div class="col-md-6">
+        <img src="../IMG/showroom.jpg" alt="Showroom OTO STORE" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <!-- Tầm nhìn & Sứ mệnh -->
+    <div class="row text-center mb-5">
+      <div class="col-md-6">
+        <h3 class="text-success">🎯 Sứ mệnh</h3>
+        <p>Đưa công nghệ đến gần hơn với khách hàng thông qua nền tảng mua sắm ô tô trực tuyến hiện đại.</p>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-primary">🚀 Tầm nhìn</h3>
+        <p>Trở thành hệ thống bán lẻ ô tô và phụ kiện hàng đầu Việt Nam về uy tín và chất lượng.</p>
+      </div>
+    </div>
+
+    <!-- Đội ngũ -->
+    <h2 class="text-center fw-bold mb-4">👨‍💻 Đội ngũ phát triển</h2>
+    <div class="row text-center justify-content-center">
+      <div class="col-md-3 team-member">
+        <img src="../IMG/team1.jpg" alt="Thành viên 1" class="img-fluid rounded-circle">
+        <h5 class="mt-3">Nguyễn Văn A</h5>
+        <p>Front-end Developer</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="../IMG/team2.jpg" alt="Thành viên 2" class="img-fluid rounded-circle">
+        <h5 class="mt-3">Trần Thị B</h5>
+        <p>Back-end Developer</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="../IMG/team3.jpg" alt="Thành viên 3" class="img-fluid rounded-circle">
+        <h5 class="mt-3">Lê Văn C</h5>
+        <p>UI/UX Designer</p>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

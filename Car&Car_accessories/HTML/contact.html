@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ - OTO STORE</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <Style>
+    .cart-badge {
+      background: #dc3545;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      padding: 2px 6px;
+      vertical-align: top;
+      margin-left: 5px;
+    }
+  </Style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../IMG/logo2.png" height="40" alt="Logo"> OTO STORE
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Liên hệ</a></li>
+          <li class="nav-item"><a href="cars.html" class="nav-link">Ô tô</a></li>
+          <li class="nav-item"><a href="accessories.html" class="nav-link">Phụ kiện</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link position-relative">
+              Giỏ hàng
+              <span id="cartCount" class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Liên hệ với chúng tôi</h2>
+      <div class="row">
+        <!-- Contact Info -->
+        <div class="col-md-5 mb-4">
+          <div class="card shadow-sm p-4">
+            <h4 class="mb-3">Thông tin liên hệ</h4>
+            <p><strong>Địa chỉ:</strong> 123 Đường Ô Tô, Quận 1, TP. Hồ Chí Minh</p>
+            <p><strong>Số điện thoại:</strong> <a href="tel:0945538349">0945 538 349</a></p>
+            <p><strong>Email:</strong> <a href="mailto:otostore@gmail.com">otostore@gmail.com</a></p>
+            <hr>
+            <p>Giờ làm việc: <br> Thứ 2 - Thứ 7: 8h00 - 18h00 <br> Chủ nhật: Nghỉ</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <div class="card shadow-sm p-4">
+            <h4 class="mb-3">Gửi tin nhắn cho chúng tôi</h4>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên của bạn" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Nội dung</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Nhập nội dung tin nhắn..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Gửi liên hệ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    <p class="mb-0">&copy; © 2025 OTO STORE. All rights reserved. | Cùng bạn trên mọi hành trình.</p>
+  </footer>
+
+  <script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

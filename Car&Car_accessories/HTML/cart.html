@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giỏ hàng - OTO STORE</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <style>
+    /* Dàn layout toàn trang để footer dính dưới cùng */
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1 0 auto; /* nội dung chính chiếm không gian còn lại */
+    }
+    footer {
+      flex-shrink: 0; /* không bị co lại */
+    }
+    .cart-badge {
+      background: #dc3545;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      padding: 2px 6px;
+      vertical-align: top;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Thanh menu -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../IMG/logo2.png" height="40" alt="Logo"> OTO STORE
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Trang chủ</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Liên hệ</a></li>
+          <li class="nav-item"><a href="cars.html" class="nav-link">Ô tô</a></li>
+          <li class="nav-item"><a href="accessories.html" class="nav-link">Phụ kiện</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link position-relative active">
+              Giỏ hàng
+              <span id="cartCount" class="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nội dung chính -->
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Giỏ hàng</h2>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered text-center align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Bỏ chọn</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <!-- Các dòng sản phẩm sẽ được JS thêm vào -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mt-4">
+      <h4 id="cart-total" class="mb-0">Tổng: 0 VNĐ</h4>
+      <a href="checkout.html" class="btn btn-success btn-lg">Thanh toán</a>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    © 2025 OTO STORE. All rights reserved. | Cùng bạn trên mọi hành trình.
+  </footer>
+  <!-- JS -->
+  <script src="../JS/jquery-3.7.1.min.js"></script>
+  <script src="../JS/bootstrap.bundle.min.js"></script>
+  <script src="../JS/data.js"></script>
+  <script src="../JS/main.js"></script>
+  <script src="../JS/auth.js"></script>
+  <script src="../JS/cart.js"></script>
+</body>
+</html>
