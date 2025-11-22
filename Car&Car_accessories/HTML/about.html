@@ -37,6 +37,33 @@
       vertical-align: top;
       margin-left: 5px;
     }
+    .faq-header {
+      background-color: #212529;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #ffc107;
+      color: #000;
+    }
+    .site-map {
+      background-color: #212529;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .site-map h5 {
+      color: #ffc107;
+      margin-bottom: 20px;
+    }
+    .site-map a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    .site-map a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -75,61 +102,94 @@
   </section>
   <!-- Giới thiệu -->
   <!-- Giới thiệu -->
-  <section class="content-section container">
-    <div class="row mb-5">
-      <!-- Cột 1 của phần giới thiệu -->
-      <div class="col-md-6">
-        <h2 class="fw-bold mb-3 text-primary">Chúng tôi là ai?</h2>
-        <p>
-          <strong>OTO STORE</strong> là nền tảng thương mại điện tử chuyên cung cấp các dòng xe hơi mới nhất 
-          cùng phụ kiện chính hãng. Chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm 
-          tiện lợi, minh bạch và an toàn nhất.
-        </p>
-        <p>
-          Từ những chiếc xe phổ thông đến xe sang trọng, OTO STORE luôn cập nhật những mẫu mới 
-          nhất trên thị trường, đi kèm dịch vụ chăm sóc tận tâm và chuyên nghiệp.
-        </p>
-      </div>
-
-      <!-- Cột 2 của phần giới thiệu -->
+  <!-- Phần 1: Giới thiệu, Sứ mệnh, Tầm nhìn -->
+  <section class="container mb-5">
+    <div class="row border rounded p-4">
+      <!-- Cột 1: Giới thiệu (ảnh showroom) -->
       <div class="col-md-6">
         <img src="../IMG/showroom.jpg" alt="Showroom OTO STORE" class="img-fluid rounded shadow">
       </div>
-    </div>
 
-    <!-- Tầm nhìn & Sứ mệnh -->
-    <div class="row text-center mb-5">
+      <!-- Cột 2: Sứ mệnh và Tầm nhìn -->
       <div class="col-md-6">
-        <h3 class="text-success">🎯 Sứ mệnh</h3>
-        <p>Đưa công nghệ đến gần hơn với khách hàng thông qua nền tảng mua sắm ô tô trực tuyến hiện đại.</p>
-      </div>
-      <div class="col-md-6">
-        <h3 class="text-primary">🚀 Tầm nhìn</h3>
-        <p>Trở thành hệ thống bán lẻ ô tô và phụ kiện hàng đầu Việt Nam về uy tín và chất lượng.</p>
-      </div>
-    </div>
-
-    <!-- Đội ngũ -->
-    <h2 class="text-center fw-bold mb-4">👨‍💻 Đội ngũ phát triển</h2>
-    <div class="row text-center justify-content-center">
-      <div class="col-md-3 team-member">
-        <img src="../IMG/team1.jpg" alt="Thành viên 1" class="img-fluid rounded-circle">
-        <h5 class="mt-3">Nguyễn Văn A</h5>
-        <p>Front-end Developer</p>
-      </div>
-      <div class="col-md-3 team-member">
-        <img src="../IMG/team2.jpg" alt="Thành viên 2" class="img-fluid rounded-circle">
-        <h5 class="mt-3">Trần Thị B</h5>
-        <p>Back-end Developer</p>
-      </div>
-      <div class="col-md-3 team-member">
-        <img src="../IMG/team3.jpg" alt="Thành viên 3" class="img-fluid rounded-circle">
-        <h5 class="mt-3">Lê Văn C</h5>
-        <p>UI/UX Designer</p>
+        <div class="row text-center mb-5">
+          <!-- Sứ mệnh -->
+          <div class="col-md-6">
+            <h3 class="text-success">Sứ mệnh</h3>
+            <p>Đưa công nghệ đến gần hơn với khách hàng thông qua nền tảng mua sắm ô tô trực tuyến hiện đại.</p>
+          </div>
+          <!-- Tầm nhìn -->
+          <div class="col-md-6">
+            <h3 class="text-primary">Tầm nhìn</h3>
+            <p>Trở thành hệ thống bán lẻ ô tô và phụ kiện hàng đầu Việt Nam về uy tín và chất lượng.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Phần 2: Đội ngũ phát triển -->
+  <section class="container mb-5">
+    <div class="row border rounded p-4">
+      <h2 class="text-center fw-bold mb-4">Sinh viên thực hiện</h2>
+      <div class="row text-center justify-content-center">
+        <!-- Thành viên 1 -->
+        <div class="col-md-3 team-member">
+          <h5 class="mt-3">Họ và Tên: Văn Chánh Nguyễn</h5>
+          <h6 class="#">Mã số sinh viên: 23631251</h6>
+          <h6 class="#">Lớp: DHHTTT19ATT</h6>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="site-map">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3">
+          <h5>Giới thiệu</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Sản phẩm</h5>
+          <ul class="list-unstyled">
+            <li><a href="cars.html">Ô tô</a></li>
+            <li><a href="accessories.html">Phụ kiện</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Hỗ trợ khách hàng</h5>
+          <ul class="list-unstyled">
+            <li><a href="faq.html">Câu hỏi thường gặp</a></li>
+            <li><a href="terms.html">Điều khoản sử dụng</a></li>
+            <li><a href="policy.html">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Kết nối với chúng tôi</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white text-center p-4 mt-auto">
+    <div class="container">
+      <h5>Về OTO STORE</h5>
+      <p>OTO STORE chuyên cung cấp thông tin và sản phẩm ô tô chính hãng.</p>
+      <p>Email: otostorevn@gmail.com | Hotline: 0945 538 349</p>
+      <p>© 2025 OTO STORE. All rights reserved. | Cùng bạn trên mọi hành trình.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

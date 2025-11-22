@@ -19,8 +19,8 @@
       transition: transform 0.3s ease;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Ảnh phủ kín khung mà không méo */
-      border-radius: 0.5rem 0 0 0.5rem; /* Bo góc trái cho đẹp */
+      object-fit: cover;
+      border-radius: 0.5rem 0 0 0.5rem;
     }
     .car-card:hover img {
       transform: scale(1.05);
@@ -33,6 +33,24 @@
       padding: 2px 6px;
       vertical-align: top;
       margin-left: 5px;
+    }
+    /* ===== SITE MAP ===== */
+    .site-map {
+      background-color: #212529;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .site-map h5 {
+      color: #ffc107;
+      margin-bottom: 20px;
+    }
+    .site-map a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    .site-map a:hover {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -59,6 +77,7 @@
               <span id="cartCount" class="cart-badge">0</span>
             </a>
           </li>
+          <li class="nav-item"><a href="login.html" class="nav-link">Đăng nhập</a></li>
         </ul>
       </div>
     </div>
@@ -74,82 +93,122 @@
   <div class="container my-5">
     <h2 class="text-center mb-4">🚗 Ô TÔ NỔI BẬT</h2>
 
-    <!-- 🚗 TOYOTA CAMRY 2025 -->
-<div class="card mb-4 car-card" 
-     data-id="1" 
-     data-name="Toyota Camry 2025" 
-     data-img="../IMG/car1.jpg" 
-     data-price="1.250.000.000 VNĐ" 
-     data-desc="Sedan sang trọng, nội thất cao cấp, tiết kiệm nhiên liệu.">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="../IMG/Camry2025.jpg" class="img-fluid rounded-start" alt="Toyota Camry 2025">
+    <!-- Toyota Camry -->
+    <div class="card mb-4 car-card" 
+         data-id="1" 
+         data-name="Toyota Camry 2025" 
+         data-img="../IMG/car1.jpg" 
+         data-price="1.250.000.000 VNĐ" 
+         data-desc="Sedan sang trọng, nội thất cao cấp, tiết kiệm nhiên liệu.">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../IMG/Camry2025.jpg" class="img-fluid rounded-start" alt="Toyota Camry 2025">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Toyota Camry 2025</h5>
+            <p class="card-text">Sedan sang trọng, nội thất cao cấp, tiết kiệm nhiên liệu.</p>
+            <p class="card-text"><strong>Thông tin nhanh:</strong> Động cơ Hybrid 2.5L, công suất mạnh mẽ nhưng tiết kiệm nhiên liệu vượt trội.</p>
+            <p class="card-text"><strong>Công nghệ:</strong> Trang bị gói an toàn Toyota Safety Sense 3.0, màn hình cảm ứng 12 inch.</p>
+            <p class="card-text"><strong>Trải nghiệm:</strong> Vận hành êm ái, không gian yên tĩnh và sang trọng bậc nhất phân khúc.</p>
+            <p class="card-text text-danger fw-bold">Giá: 1.250.000.000 VNĐ</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Toyota Camry 2025</h5>
-        <p class="card-text">Sedan sang trọng, nội thất cao cấp, tiết kiệm nhiên liệu.</p>
-        <p class="card-text"><strong>Thông tin nhanh:</strong> Động cơ Hybrid 2.5L, công suất mạnh mẽ nhưng tiết kiệm nhiên liệu vượt trội.</p>
-        <p class="card-text"><strong>Công nghệ:</strong> Trang bị gói an toàn Toyota Safety Sense 3.0, màn hình cảm ứng 12 inch.</p>
-        <p class="card-text"><strong>Trải nghiệm:</strong> Vận hành êm ái, không gian yên tĩnh và sang trọng bậc nhất phân khúc.</p>
-        <p class="card-text text-danger fw-bold">Giá: 1.250.000.000 VNĐ</p>
+
+    <!-- Mazda CX-5 -->
+    <div class="card mb-4 car-card" 
+         data-id="2" 
+         data-name="Mazda CX-5 2025" 
+         data-img="../IMG/car2.jpg" 
+         data-price="999.000.000 VNĐ" 
+         data-desc="SUV thể thao, phong cách hiện đại, phù hợp gia đình.">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../IMG/Mazda-CX-5-2025.jpg" class="img-fluid rounded-start" alt="Mazda CX-5 2025">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Mazda CX-5 2025</h5>
+            <p class="card-text">SUV thể thao, phong cách hiện đại, phù hợp gia đình.</p>
+            <p class="card-text"><strong>Thông tin nhanh:</strong> Động cơ SkyActiv-G 2.0L, hệ dẫn động 4 bánh toàn thời gian (AWD).</p>
+            <p class="card-text"><strong>Công nghệ:</strong> Hỗ trợ lái i-Activsense, màn hình trung tâm 10.25 inch tích hợp Apple CarPlay.</p>
+            <p class="card-text"><strong>Trải nghiệm:</strong> Cabin cách âm tốt, ghế ngồi da cao cấp, cảm giác lái thể thao và chắc chắn.</p>
+            <p class="card-text text-danger fw-bold">Giá: 970.000.000 VNĐ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIA Carnival -->
+    <div class="card mb-4 car-card" 
+         data-id="3" 
+         data-name="KIA Carnival 2025" 
+         data-img="../IMG/kia-carnival-2025.jpg" 
+         data-price="1.500.000.000 VNĐ" 
+         data-desc="Minivan cao cấp, thiết kế sang trọng, tiện nghi vượt trội, phù hợp cho gia đình.">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="../IMG/KIA-CARNIVAL-2025-1.jpg" class="img-fluid rounded-start" alt="KIA Carnival 2025">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">KIA Carnival 2025</h5>
+            <p class="card-text">Minivan cao cấp, thiết kế sang trọng, tiện nghi vượt trội, phù hợp cho gia đình.</p>
+            <p class="card-text"><strong>Thông tin nhanh:</strong> 7 chỗ ngồi rộng rãi, cửa trượt điện thông minh, khoang hành lý siêu lớn.</p>
+            <p class="card-text"><strong>Công nghệ:</strong> Màn hình kép 12.3 inch, hỗ trợ lái thông minh ADAS, camera 360 độ.</p>
+            <p class="card-text"><strong>Trải nghiệm:</strong> Vận hành êm, điều hòa 3 vùng độc lập, mang đến cảm giác như “chuyên cơ mặt đất”.</p>
+            <p class="card-text text-danger fw-bold">Giá: 1.500.000.000 VNĐ</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- 🚙 MAZDA CX-5 2025 -->
-<div class="card mb-4 car-card" 
-     data-id="2" 
-     data-name="Mazda CX-5 2025" 
-     data-img="../IMG/car2.jpg" 
-     data-price="999.000.000 VNĐ" 
-     data-desc="SUV thể thao, phong cách hiện đại, phù hợp gia đình.">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="../IMG/Mazda-CX-5-2025.jpg" class="img-fluid rounded-start" alt="Mazda CX-5 2025">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Mazda CX-5 2025</h5>
-        <p class="card-text">SUV thể thao, phong cách hiện đại, phù hợp gia đình.</p>
-        <p class="card-text"><strong>Thông tin nhanh:</strong> Động cơ SkyActiv-G 2.0L, hệ dẫn động 4 bánh toàn thời gian (AWD).</p>
-        <p class="card-text"><strong>Công nghệ:</strong> Hỗ trợ lái i-Activsense, màn hình trung tâm 10.25 inch tích hợp Apple CarPlay.</p>
-        <p class="card-text"><strong>Trải nghiệm:</strong> Cabin cách âm tốt, ghế ngồi da cao cấp, cảm giác lái thể thao và chắc chắn.</p>
-        <p class="card-text text-danger fw-bold">Giá: 970.000.000 VNĐ</p>
+  <!-- 🔹 SITE MAP -->
+  <section class="site-map">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3">
+          <h5>Giới thiệu</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Sản phẩm</h5>
+          <ul class="list-unstyled">
+            <li><a href="cars.html">Ô tô</a></li>
+            <li><a href="accessories.html">Phụ kiện</a></li>
+            <li><a href="cart.html">Giỏ hàng</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Hỗ trợ khách hàng</h5>
+          <ul class="list-unstyled">
+            <li><a href="faq.html">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Hướng dẫn mua hàng</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Kết nối với chúng tôi</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- 🚐 KIA CARNIVAL 2025 -->
-<div class="card mb-4 car-card" 
-     data-id="3" 
-     data-name="KIA Carnival 2025" 
-     data-img="../IMG/kia-carnival-2025.jpg" 
-     data-price="1.500.000.000 VNĐ" 
-     data-desc="Minivan cao cấp, thiết kế sang trọng, tiện nghi vượt trội, phù hợp cho gia đình.">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="../IMG/KIA-CARNIVAL-2025-1.jpg" class="img-fluid rounded-start" alt="KIA Carnival 2025">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">KIA Carnival 2025</h5>
-        <p class="card-text">Minivan cao cấp, thiết kế sang trọng, tiện nghi vượt trội, phù hợp cho gia đình.</p>
-        <p class="card-text"><strong>Thông tin nhanh:</strong> 7 chỗ ngồi rộng rãi, cửa trượt điện thông minh, khoang hành lý siêu lớn.</p>
-        <p class="card-text"><strong>Công nghệ:</strong> Màn hình kép 12.3 inch, hỗ trợ lái thông minh ADAS, camera 360 độ.</p>
-        <p class="card-text"><strong>Trải nghiệm:</strong> Vận hành êm, điều hòa 3 vùng độc lập, mang đến cảm giác như “chuyên cơ mặt đất”.</p>
-        <p class="card-text text-danger fw-bold">Giá: 1.500.000.000 VNĐ</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center p-4 mt-5">
+  <footer class="bg-dark text-white text-center p-4">
     <div class="container">
       <h5>Về OTO STORE</h5>
       <p>OTO STORE chuyên cung cấp thông tin và sản phẩm ô tô chính hãng.</p>

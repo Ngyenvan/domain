@@ -3,104 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bản đồ Website - AutoWorld</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Giới thiệu - OTO STORE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #f9f9f9;
     }
-    h1 {
-      margin-top: 20px;
-    }
-    .sitemap-section h4 {
-      color: #0d6efd;
-      margin-top: 20px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin: 5px 0;
-    }
-    ul li a {
-      text-decoration: none;
-      color: #212529;
-    }
-    ul li a:hover {
-      color: #0d6efd;
-    }
-    footer {
-      background-color: #212529;
+    .hero-section {
+      background: url('../IMG/banner-car.jpg') center/cover no-repeat;
       color: white;
-      padding: 15px 0;
       text-align: center;
-      margin-top: 40px;
+      padding: 100px 20px;
+    }
+    .hero-section h1 {
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .content-section {
+      padding: 50px 20px;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="text-center mb-4">Bản đồ Website</h1>
-    <p class="text-center text-muted mb-5">Dưới đây là danh sách các trang và chuyên mục trên website AutoStore.</p>
 
-    <!-- Trang chính -->
-    <div class="sitemap-section">
-      <h4>🏠 Trang chính</h4>
-      <ul>
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="about.html">Giới thiệu</a></li>
-        <li><a href="contact.html">Liên hệ</a></li>
-        <li><a href="login.html">Đăng nhập</a></li>
-        <li><a href="register.html">Đăng ký</a></li>
-      </ul>
+  <!-- Header -->
+  <header class="bg-dark text-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h3 class="m-0">🚗 OTO STORE</h3>
+      <nav>
+        <a href="index.html" class="text-light mx-2 text-decoration-none">Trang chủ</a>
+        <a href="products.html" class="text-light mx-2 text-decoration-none">Sản phẩm</a>
+        <a href="about.html" class="text-warning mx-2 text-decoration-none fw-bold">Giới thiệu</a>
+        <a href="contact.html" class="text-light mx-2 text-decoration-none">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <h1>Về OTO STORE</h1>
+    <p>Đối tác tin cậy của bạn trong thế giới ô tô</p>
+  </section>
+
+  <!-- Giới thiệu -->
+  <section class="content-section container">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="../IMG/showroom.jpg" alt="Showroom OTO STORE" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3 text-primary">Chúng tôi là ai?</h2>
+        <p>
+          <strong>OTO STORE</strong> là nền tảng thương mại điện tử chuyên cung cấp các dòng xe hơi mới nhất 
+          cùng phụ kiện chính hãng. Chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm 
+          tiện lợi, minh bạch và an toàn nhất.
+        </p>
+        <p>
+          Từ những chiếc xe phổ thông đến xe sang trọng, OTO STORE luôn cập nhật những mẫu mới 
+          nhất trên thị trường, đi kèm dịch vụ chăm sóc tận tâm và chuyên nghiệp.
+        </p>
+      </div>
     </div>
 
-    <!-- Sản phẩm -->
-    <div class="sitemap-section">
-      <h4>🚗 Sản phẩm (Xe hơi)</h4>
-      <ul>
-        <li><a href="car-list.html">Danh sách xe</a></li>
-        <li><a href="car-detail.html?id=1">Toyota Camry 2025</a></li>
-        <li><a href="car-detail.html?id=2">Mazda CX-5 2025</a></li>
-        <li><a href="car-detail.html?id=3">KIA Carnival 2025</a></li>
-        <li><a href="car-detail.html?id=4">Honda Accord 2025</a></li>
-        <li><a href="car-detail.html?id=5">Hyundai Tucson 2025</a></li>
-        <li><a href="car-detail.html?id=6">BMW X5 2025</a></li>
-      </ul>
+    <!-- Tầm nhìn & Sứ mệnh -->
+    <div class="row text-center mb-5">
+      <div class="col-md-6">
+        <h3 class="text-success">🎯 Sứ mệnh</h3>
+        <p>Đưa công nghệ đến gần hơn với khách hàng thông qua nền tảng mua sắm ô tô trực tuyến hiện đại.</p>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-primary">🚀 Tầm nhìn</h3>
+        <p>Trở thành hệ thống bán lẻ ô tô và phụ kiện hàng đầu Việt Nam về uy tín và chất lượng.</p>
+      </div>
     </div>
 
-    <!-- Phụ kiện -->
-    <div class="sitemap-section">
-      <h4>🧰 Phụ kiện</h4>
-      <ul>
-        <li><a href="accessories.html">Phụ kiện xe</a></li>
-      </ul>
+    <!-- Đội ngũ -->
+    <h2 class="text-center fw-bold mb-4">👨‍💻 Đội ngũ phát triển</h2>
+    <div class="row text-center justify-content-center">
+      <div class="col-md-3 team-member">
+        <img src="../IMG/team1.jpg" alt="Thành viên 1">
+        <h5 class="mt-3">Nguyễn Văn A</h5>
+        <p>Front-end Developer</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="../IMG/team2.jpg" alt="Thành viên 2">
+        <h5 class="mt-3">Trần Thị B</h5>
+        <p>Back-end Developer</p>
+      </div>
+      <div class="col-md-3 team-member">
+        <img src="../IMG/team3.jpg" alt="Thành viên 3">
+        <h5 class="mt-3">Lê Văn C</h5>
+        <p>UI/UX Designer</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Giỏ hàng -->
-    <div class="sitemap-section">
-      <h4>🛒 Giỏ hàng & Thanh toán</h4>
-      <ul>
-        <li><a href="cart.html">Giỏ hàng</a></li>
-        <li><a href="checkout.html">Thanh toán</a></li>
-        <li><a href="orders.html">Đơn hàng của tôi</a></li>
-      </ul>
-    </div>
-
-    <!-- Chính sách -->
-    <div class="sitemap-section">
-      <h4>📜 Chính sách & Hỗ trợ</h4>
-      <ul>
-        <li><a href="policy.html">Chính sách bảo mật</a></li>
-        <li><a href="terms.html">Điều khoản sử dụng</a></li>
-        <li><a href="faq.html">Câu hỏi thường gặp</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3 mt-5">
     <p>© 2025 OTO STORE. All rights reserved. | Cùng bạn trên mọi hành trình.</p>
   </footer>
+
 </body>
 </html>
